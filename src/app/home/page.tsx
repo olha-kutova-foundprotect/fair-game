@@ -110,9 +110,28 @@ const Home: React.FC = () => {
               That’s what Fair Game does.
             </h2>
 
-            <p className="text-gray-400 text-sm sm:text-xl leading-relaxed max-w-lg">
-              We don&apos;t produce ideas; we take real problems, understand them deeply and turn them into businesses built to succeed.
-            </p>
+            {/* QUOTE BLOCK */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 mt-6 max-w-xl">
+              {/* Image */}
+              <div className="relative shrink-0">
+                <div className="absolute inset-0 rounded-full border border-deep-teal/30 scale-110" />
+                <img
+                  src="/images/home-people.png"
+                  alt="Fair Game founders and team"
+                  className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover"
+                />
+              </div>
+
+              {/* Quote */}
+              <blockquote className="text-center sm:text-left">
+                <p className="text-gray-300 text-sm sm:text-lg leading-relaxed italic">
+                  “We don’t produce ideas; we take real problems, understand them deeply and turn them into businesses built to succeed.”
+                </p>
+                <footer className="mt-2 text-xs uppercase tracking-widest text-gray-500">
+                  Fair Game
+                </footer>
+              </blockquote>
+            </div>
 
             <div className="flex gap-10 pt-4 text-sm">
               <div>
