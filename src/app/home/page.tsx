@@ -1,42 +1,82 @@
-'use client';
+import React from 'react';
+import Head from 'next/head';
 
-import { motion } from 'framer-motion';
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main>
-      <section className="min-h-screen bg-black text-white flex items-center">
-        <div className="max-w-5xl mx-auto px-6 space-y-10 md:space-y-12">
-          <motion.h1
-            initial={{ opacity: 0, y: -60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight"
-          >
-            Ideas are easy.
-          </motion.h1>
+    <div className="relative min-h-screen w-full bg-charcoal-black overflow-hidden text-white">
+      <Head>
+        <title>Fair Game | Co-Building Disruptive Companies</title>
+      </Head>
 
-          <motion.p
-            initial={{ opacity: 0, y: -60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 1.7, ease: 'easeOut' }}
-            className="text-2xl sm:text-3xl md:text-4xl font-medium leading-snug tracking-tight"
-          >
-            Solving big problems and commercialising them isn’t.
-          </motion.p>
+      <div className="absolute inset-0 z-0 pointer-events-none bg-charcoal-black"/>
 
-          <motion.p
-            initial={{ opacity: 0, y: -120, scale: 2 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ delay: 3, duration: 0.6, ease: 'easeOut' }}
-            className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight"
-          >
-            That’s what{' '}
-            <span className="text-purple-500 font-bold">Fair Game</span> does.
-          </motion.p>
+      {/* FAIR GAME TEXT — DESKTOP ONLY */}
+      <div className="pointer-events-none absolute inset-0 z-0 hidden lg:block">
+        <span className="absolute bottom-[-8%] left-[1%] text-[20rem] font-bold text-white/5 leading-none">
+          FAIR GAME
+        </span>
+      </div>
+
+      {/* BACKGROUND ARCS */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div
+          className="absolute -right-20 -top-20 w-[800px] h-[800px] rounded-full border-[60px] border-white/[0.03]"
+          style={{ transform: 'rotate(-15deg)' }}
+        />
+        <div
+          className="absolute right-[-10%] bottom-[-10%] w-[600px] h-[600px] rounded-full border-[40px] border-white/[0.02]"
+        />
+      </div>
+
+      <main className="relative z-20 container mx-auto px-6 min-h-screen flex items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full items-center">
+
+          {/* LEFT CONTENT */}
+          <div className="relative flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 max-w-2xl mx-auto lg:mx-0">
+            <div className="flex items-center gap-4 text-xs uppercase tracking-widest text-gray-500">
+              <span>Fair Game</span>
+              <span className="w-8 h-px bg-gray-600" />
+              <span>Venture Studio</span>
+            </div>
+
+            <h1 className="text-3xl fonttracking-tight">
+              Ideas are easy! <br />
+              <span className="">Solving big problems and commercialising them isn’t.</span>
+            </h1>
+            <h2 className="text-5xl font-semibold tracking-tight text-burnt-terracotta">That’s what Fair Game does.</h2>
+
+            <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
+              We don&#39;t produce ideas; we take real problems, understands them deeply and turn them into businesses built to succeed.
+            </p>
+
+            <div className="flex gap-10 pt-4 text-sm">
+              <div>
+                <div className="text-burnt-terracotta font-semibold text-lg">7+</div>
+                <div className="text-gray-500">Ventures Built</div>
+              </div>
+              <div>
+                <div className="text-burnt-terracotta font-semibold text-lg">15+</div>
+                <div className="text-gray-500">Founders Supported</div>
+              </div>
+            </div>
+
+            {/*<button className="mt-6 inline-flex items-center justify-center px-10 py-4 rounded-lg bg-deep-teal font-semibold transition-all hover:bg-[#3db6c0] hover:shadow-[0_0_30px_rgba(45,166,176,0.35)] active:scale-95">*/}
+            {/*  Let’s Build Together*/}
+            {/*</button>*/}
+          </div>
+
+          {/* DESKTOP — CIRCLES (UNCHANGED) */}
+          <div className="hidden lg:block relative h-[600px]">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute w-[440px] h-[440px] rounded-full border border-[#2da6b0]/20" />
+              <div className="absolute w-[360px] h-[360px] rounded-full border border-[#2da6b0]/40" />
+            </div>
+          </div>
 
         </div>
-      </section>
-    </main>
+      </main>
+    </div>
   );
-}
+};
+
+export default Home;

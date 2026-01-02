@@ -15,8 +15,8 @@ export default function Logo({
 }: LogoProps) {
   const src =
     variant === 'light'
-      ? '/images/logo-w.png'
-      : '/images/logo-w.png';
+      ? '/images/logo.png'
+      : '/images/logo.png';
 
   return (
     <Link

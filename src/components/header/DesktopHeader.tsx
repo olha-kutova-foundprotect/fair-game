@@ -21,7 +21,7 @@ export default function DesktopHeader() {
   const isLight = theme === 'light';
 
   return (
-    <header className="w-full bg-black text-white">
+    <header className="w-full bg-charcoal-black text-white">
       <div className="max-w-[1200px] 2xl:max-w-[1800px] mx-auto px-6 py-6 flex items-center justify-between">
         <Logo variant={isLight ? 'dark' : 'light'} priority />
 

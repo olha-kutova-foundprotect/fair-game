@@ -1,7 +1,7 @@
 'use client';
 
-import IntroGate from '@/components/intro/IntroGate';
+import Home from "@/app/home/page";
 
 export default function App() {
-  return <IntroGate />;
+  return <Home />;
 }
