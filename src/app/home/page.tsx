@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               <span>Solving big problems and commercialising them isn’t.</span>
             </h1>
 
-            <h2 className="text-2xl sm:text-5xl font-semibold tracking-tight text-burnt-terracotta">
+            <h2 className="text-2xl sm:text-5xl font-semibold tracking-tight text-deep-teal">
               That’s what Fair Game does.
             </h2>
 
@@ -90,11 +90,11 @@ const Home: React.FC = () => {
 
             <div className="flex gap-10 pt-4 text-sm">
               <div>
-                <div className="text-burnt-terracotta font-semibold text-lg">7+</div>
+                <div className="text-deep-teal font-semibold text-lg">7+</div>
                 <div className="text-gray-500">Ventures Built</div>
               </div>
               <div>
-                <div className="text-burnt-terracotta font-semibold text-lg">15+</div>
+                <div className="text-deep-teal font-semibold text-lg">15+</div>
                 <div className="text-gray-500">Founders Supported</div>
               </div>
             </div>

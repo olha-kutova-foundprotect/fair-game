@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, DM_Serif_Display } from 'next/font/google';
 import { HeaderThemeProvider } from '@/components/header/HeaderThemeContext';
+import Header from '@/components/header/Header';
 import './globals.css';
 import React from 'react';
-import Header from "@/components/header/Header";
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -13,6 +13,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
+});
+
+const dmSerif = DM_Serif_Display({
+  variable: '--font-serif',
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -27,13 +34,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <HeaderThemeProvider>
-          <Header />
-          {children}
-        </HeaderThemeProvider>
-      </body>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${dmSerif.variable}`}
+    >
+    <body className="antialiased">
+    <HeaderThemeProvider>
+      <Header />
+      {children}
+    </HeaderThemeProvider>
+    </body>
     </html>
   );
 }
