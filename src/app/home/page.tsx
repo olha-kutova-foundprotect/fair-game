@@ -19,14 +19,43 @@ const Home: React.FC = () => {
 
       {/* BACKGROUND ARCS */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* First circle */}
         <div
-          className="absolute -right-20 -top-20 w-[800px] h-[800px] rounded-full border-[60px] border-white/[0.03]"
-          style={{ transform: 'rotate(-15deg)' }}
+          className="
+            absolute
+            -top-20
+            left-[40%]
+            sm:-right-20
+            sm:left-auto
+            w-[800px]
+            h-[800px]
+            rounded-full
+            border-[70px]"
+          style={{
+            borderColor: 'rgba(37, 39, 54, 0.5)',
+            transform: 'rotate(-15deg)',
+          }}
         />
+
+        {/* Second circle */}
         <div
-          className="absolute right-[-10%] bottom-[-10%] w-[600px] h-[600px] rounded-full border-[40px] border-white/[0.02]"
+          className="
+            absolute
+            bottom-[-10%]
+            left-[20%]
+            sm:right-[-10%]
+            sm:left-auto
+            w-[600px]
+            h-[600px]
+            rounded-full
+            border-[40px]"
+          style={{
+            borderColor: 'rgba(37, 39, 54, 0.18)',
+          }}
         />
       </div>
+
+
 
       <main className="relative z-20 container mx-auto px-6 min-h-screen flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full items-center">
@@ -68,8 +97,8 @@ const Home: React.FC = () => {
           {/* DESKTOP — CIRCLES (UNCHANGED) */}
           <div className="hidden lg:block relative h-[600px]">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="absolute w-[440px] h-[440px] rounded-full border border-[#2da6b0]/20" />
-              <div className="absolute w-[360px] h-[360px] rounded-full border border-[#2da6b0]/40" />
+              <div className="absolute w-[440px] h-[440px] rounded-full border border-deep-teal/20" />
+              <div className="absolute w-[360px] h-[360px] rounded-full border border-deep-teal/40" />
             </div>
           </div>
 
