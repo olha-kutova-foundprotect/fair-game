@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
       {/* FAIR GAME TEXT — DESKTOP ONLY */}
       <div className="pointer-events-none absolute inset-0 z-0 hidden lg:block">
-        <span className="absolute bottom-[-8%] left-[1%] text-[20rem] font-bold text-white/5 leading-none">
+        <span className="absolute bottom-[-8%] left-[1%] text-[20rem] font-bold text-white/3 leading-none">
           FAIR GAME
         </span>
       </div>
@@ -26,13 +26,13 @@ const Home: React.FC = () => {
             -top-20
             left-[40%]
             sm:-right-20
-            sm:left-auto
+            sm:left-[53%]
             w-[800px]
             h-[800px]
             rounded-full
-            border-[70px]"
+            border-[75px]"
           style={{
-            borderColor: 'rgba(37, 39, 54, 0.5)',
+            borderColor: 'rgba(38, 48, 61, 0.7)',
             transform: 'rotate(-15deg)',
           }}
         />
@@ -50,7 +50,24 @@ const Home: React.FC = () => {
             rounded-full
             border-[40px]"
           style={{
-            borderColor: 'rgba(37, 39, 54, 0.18)',
+            borderColor: 'rgba(38, 48, 61, 0.4)',
+          }}
+        />
+      </div>
+
+      {/* MOBILE DIAGONAL BAND */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden lg:hidden">
+        <div
+          className="
+      absolute
+      bottom-[-45%]
+      left-[10%]
+      w-[160%]
+      h-[90%]
+      rotate-[50deg]
+    "
+          style={{
+            background: 'rgba(38, 48, 61, 0.3)',
           }}
         />
       </div>
@@ -68,13 +85,13 @@ const Home: React.FC = () => {
               <span>Venture Studio</span>
             </div>
 
-            <h1 className="text-3xl fonttracking-tight">
+            <h1 className="text-xl sm:text-3xl fonttracking-tight">
               Ideas are easy! <br />
               <span className="">Solving big problems and commercialising them isn’t.</span>
             </h1>
-            <h2 className="text-5xl font-semibold tracking-tight text-burnt-terracotta">That’s what Fair Game does.</h2>
+            <h2 className="text-2xl sm:text-5xl font-semibold tracking-tight text-burnt-terracotta">That’s what Fair Game does.</h2>
 
-            <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
+            <p className="text-gray-400 text-sm sm:text-xl leading-relaxed max-w-lg">
               We don&#39;t produce ideas; we take real problems, understands them deeply and turn them into businesses built to succeed.
             </p>
 
