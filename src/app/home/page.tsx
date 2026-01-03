@@ -63,10 +63,9 @@ const Home: React.FC = () => {
             {/* QUOTE BLOCK */}
             <div className="flex flex-col sm:flex-row items-center gap-6 mt-6 max-w-xl">
               {/* Image */}
-              <div className="relative shrink-0 w-28 h-28 rounded-full overflow-hidden">
+              <div className="relative shrink-0 w-20 h-20 rounded-full overflow-hidden">
                 {/* outer ring */}
                 <div className="absolute inset-0 rounded-full border border-deep-teal/30 scale-110 pointer-events-none" />
-
                 <Image
                   src="/images/home-people.png"
                   alt="Fair Game founders and team"
