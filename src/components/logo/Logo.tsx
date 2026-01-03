@@ -9,7 +9,7 @@ type LogoProps = {
 };
 
 export default function Logo({
-  size = 110,
+  size = 60,
   priority = false,
   variant = 'light',
 }: LogoProps) {

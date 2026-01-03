@@ -3,7 +3,8 @@
 /* === DESIGN TOKENS === */
 @theme {
     --color-deep-teal: #2F6F66;
-    --color-deep-teal-hover: #2F6F66;;
+    --color-deep-teal-hover: #2F6F66;
+    --color-light-blue-green: #2d969c;
     --color-charcoal-black: #121817;
     --color-soft-ivory: #E6ECE3;
     --color-burnt-terracotta: #A64A2A;
