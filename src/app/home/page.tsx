@@ -97,7 +97,7 @@ const Home: React.FC = () => {
         />
       </div>
 
-      <main className="relative z-20 container mx-auto px-6 min-h-screen flex items-start lg:items-start pt-20 lg:pt-20">
+      <main className="relative z-20 container mx-auto px-6 min-h-screen flex items-start lg:items-start pt-10 lg:pt-20">
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full items-center">
 
