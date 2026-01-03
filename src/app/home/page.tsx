@@ -97,13 +97,14 @@ const Home: React.FC = () => {
         />
       </div>
 
-      <main className="relative z-20 container mx-auto px-6 min-h-screen flex items-start lg:items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full items-center">
+      <main className="relative z-20 container mx-auto px-6 min-h-screen flex items-start lg:items-start pt-20 lg:pt-20">
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full items-center">
 
           {/* LEFT CONTENT */}
-          <div className="relative flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 max-w-2xl mx-auto lg:mx-0 mt-20 lg:mt-0">
+          <div className="relative flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 max-w-2xl mx-auto lg:mx-0 mt-10 lg:mt-0">
 
-            {/* Eyebrow */}
+          {/* Eyebrow */}
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}

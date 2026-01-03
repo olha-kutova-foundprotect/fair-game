@@ -40,7 +40,7 @@ export default function MobileHeader() {
       {/* TOP BAR */}
       <header className="fixed top-0 left-0 w-full z-[100] sm:hidden">
         <div className="flex items-center justify-between px-6 py-6">
-          <Logo variant={isLight ? 'dark' : 'light'} size={110} />
+          <Logo variant={isLight ? 'dark' : 'light'} size={50} />
 
           <button
             onClick={() => setOpen(true)}
@@ -64,7 +64,7 @@ export default function MobileHeader() {
           >
             {/* Top */}
             <div className="flex items-center justify-between px-6 py-6">
-              <Logo variant="light" size={110} />
+              <Logo variant="light" size={50} />
 
               <button
                 onClick={() => setOpen(false)}
